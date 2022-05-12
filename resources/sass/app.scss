@@ -8,11 +8,15 @@
 @import '~bootstrap/scss/bootstrap';
 /* universal */
 
-// Fontawesome
+// Fontawesome 导入一次后可以注释掉
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
+
+a {
+    text-decoration: none;
+}
 
 body {
     font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
@@ -67,3 +71,34 @@ html {
     padding: 3px;
     }
 }
+
+/* Topic Index Page */
+
+.topic-list {
+    .meta {
+        font-size: 0.9em;
+        color: #b3b3b3;
+
+        a {
+          color: #b3b3b3;
+        }
+    }
+
+    a {
+        color: black;
+    }
+
+}
+
+/* Add container and footer space */
+#app > div.container {
+    margin-bottom: 100px;
+}
+
+hr {
+    margin:1rem;
+    background-color: none;
+    color:inherit;
+    opacity:0.25;
+    height: 1px;
+  }

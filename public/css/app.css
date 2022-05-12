@@ -21563,6 +21563,10 @@ readers do not read off random characters that represent icons */
   content: "\f63f";
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
   font-size: 14px;
@@ -21608,4 +21612,37 @@ body {
 }
 .footer .container p a {
   color: inherit;
+}
+
+/* User register page */
+.register-page img.captcha {
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+/* Topic Index Page */
+.topic-list .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+.topic-list .meta a {
+  color: #b3b3b3;
+}
+.topic-list a {
+  color: black;
+}
+
+/* Add container and footer space */
+#app > div.container {
+  margin-bottom: 100px;
+}
+
+hr {
+  margin: 1rem;
+  background-color: none;
+  color: inherit;
+  opacity: 0.25;
+  height: 1px;
 }
