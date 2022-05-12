@@ -23,6 +23,7 @@ class User extends Authenticatable implements MustVerifyEmailContract //继承�
         'name',
         'email',
         'password',
+        'introduction',
     ];
 
     /**
