@@ -13,6 +13,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable implements MustVerifyEmailContract //继承此类将确保 User 遵守契约，拥有上面提到的三个方法。
 {
     use Notifiable, MustVerifyEmailTrait;
+    use HasFactory; //用于数据库seed
 
     /**
      * The attributes that are mass assignable.
