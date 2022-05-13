@@ -21563,6 +21563,15 @@ readers do not read off random characters that represent icons */
   content: "\f63f";
 }
 
+hr {
+  margin: 1rem 0;
+  opacity: 0.25;
+}
+
+hr:not([size]) {
+  height: 1px;
+}
+
 a {
   text-decoration: none;
 }
@@ -21637,12 +21646,4 @@ body {
 /* Add container and footer space */
 #app > div.container {
   margin-bottom: 100px;
-}
-
-hr {
-  margin: 1rem;
-  background-color: none;
-  color: inherit;
-  opacity: 0.25;
-  height: 1px;
 }

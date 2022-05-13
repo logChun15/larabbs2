@@ -14,6 +14,7 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
+
 a {
     text-decoration: none;
 }
@@ -88,6 +89,7 @@ html {
         color: black;
     }
 
+
 }
 
 /* Add container and footer space */
@@ -95,10 +97,3 @@ html {
     margin-bottom: 100px;
 }
 
-hr {
-    margin:1rem;
-    background-color: none;
-    color:inherit;
-    opacity:0.25;
-    height: 1px;
-  }
