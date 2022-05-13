@@ -21563,15 +21563,6 @@ readers do not read off random characters that represent icons */
   content: "\f63f";
 }
 
-hr {
-  margin: 1rem 0;
-  opacity: 0.25;
-}
-
-hr:not([size]) {
-  height: 1px;
-}
-
 a {
   text-decoration: none;
 }
