@@ -10,6 +10,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use App\Models\Topic;
 use Illuminate\Support\Facades\DB;
+use App\Handlers\SlugTranslateHandler;
 
 class TranslateSlug implements ShouldQueue
 {
