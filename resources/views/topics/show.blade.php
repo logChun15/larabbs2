@@ -15,7 +15,7 @@
           </div>
           <hr>
           <div class="media">
-            <div align="center">
+            <div class="align-items-center">
               <a href="{{ route('users.show', $topic->user->id) }}">
                 <img class="thumbnail img-fluid" src="{{ $topic->user->avatar }}" width="300px" height="300px">
               </a>
