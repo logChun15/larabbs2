@@ -16,17 +16,25 @@
 </head>
 
 <body>
- <div id="app" class="{{ route_class() }}-page">
-    @include('layouts._header')
-        <div class="container">
-            @include('shared._messages')
-            @yield('content')
-        </div>
-    @include('layouts._footer')
- </div>
+    <div id="app" class="{{ route_class() }}-page">
 
- <!-- Scripts -->
+    @include('layouts._header')
+    <div class="container">
+
+    @include('shared._messages')
+    @yield('content')
+    </div>
+
+    @include('layouts._footer')
+    </div>
+
+    @if (app()->isLocal())
+    @include('sudosu::user-selector')
+    @endif
+
+    <!-- Scripts -->
  <script src="{{ mix('js/app.js') }}"></script>
-@yield('scripts')
+ @yield('scripts')
 </body>
+
 </html>
