@@ -11,13 +11,15 @@
         "hieu-le/active": "^9.0",
         "intervention/image": "^2.7",
         "laravel/framework": "^8.75",
+        "laravel/horizon": "^5.9",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
         "mews/captcha": "^3.2",
         "mews/purifier": "^3.3",
         "overtrue/laravel-lang": "~3.0",
-        "overtrue/pinyin": "^4.0"
+        "overtrue/pinyin": "^4.0",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",

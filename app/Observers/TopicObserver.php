@@ -28,10 +28,22 @@ class TopicObserver
 
         // 如 slug 字段无内容，即使用翻译器对 title 进行翻译
         if ( ! $topic->slug) {
-            $topic->slug = app(SlugTranslateHandler::class)->translate($topic->title);
+            // $topic->slug = app(SlugTranslateHandler::class)->translate($topic->title);
             //app() 允许我们使用 ，此处我们用来生成 SlugTranslateHandler 实例。
+
+            dispatch(new TranslateSlug($topic));  // 推送任务到队列
         }
 
     }
+
+    public function saved(Topic $topic)
+    {
+        // 如 slug 字段无内容，即使用翻译器对 title 进行翻译
+        if ( ! $topic->slug) {
+            // 推送任务到队列
+            dispatch(new TranslateSlug($topic));
+        }
+    }
+
 
 }
