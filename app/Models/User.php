@@ -15,6 +15,7 @@ use Illuminate\Support\Str;
 
 class User extends Authenticatable implements MustVerifyEmailContract //继承此类将确保 User 遵守契约，拥有上面提到的三个方法。
 {
+    use Traits\ActiveUserHelper;
     use HasRoles;
     use MustVerifyEmailTrait;
     use HasFactory; //用于数据库seed
