@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 return array(
 
     // 后台的 URI 入口
@@ -42,6 +43,12 @@ return array(
             'roles',
             'permissions',
         ],
+        '内容管理' => [
+            'categories',
+            'topics',
+            'replies',
+        ],
+
     ],
 
     /*
